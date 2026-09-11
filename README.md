@@ -15,7 +15,7 @@ Ask Claude to build one of these for you, or ask what's worth turning into one b
 2. Checking whether it's actually a good fit for this, some tasks aren't
 3. Building the basic pieces: what the goal is, the instructions, and a place to save progress
 4. Starting small and safe: Claude reads and drafts first, nothing gets sent or changed without you saying so
-5. Making sure the saved progress lives somewhere that survives, your notes app, a shared drive, wherever you already keep things - exportable and reusable across other AI tools if needed 
+5. Making sure the saved progress lives somewhere that survives and stays usable elsewhere, your notes app, a shared drive, wherever you already keep things, not locked into one tool 
 6. Testing it by hand a few times before trusting it to run on its own
 7. Telling you plainly when it's actually ready
 
