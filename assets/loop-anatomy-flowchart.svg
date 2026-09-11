@@ -1,6 +1,6 @@
-<svg viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
 <title id="title">How a loop works</title>
-<desc id="desc">A simple six-step cycle: you ask once, then Claude reads the rules, does the job, checks its own work, saves progress, and decides whether to keep going or ask you, with progress saved to your own storage. A human icon marks the steps you do; a muted outline marks the steps Claude does automatically.</desc>
+<desc id="desc">A simple six-step cycle: you ask once, then Claude reads the rules, does the job, checks its own work, saves progress, and decides whether to keep going or ask you, with progress saved to your own storage. A YOU chip marks steps you do; an AI chip marks steps Claude does on its own.</desc>
 <defs>
   <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
     <path d="M0,0 L8,4 L0,8 z" fill="#2d3142"/>
@@ -8,43 +8,46 @@
   <marker id="arrowMuted" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
     <path d="M0,0 L8,4 L0,8 z" fill="#7a8399"/>
   </marker>
-  <g id="personIcon">
-    <circle cx="0" cy="0" r="4" fill="#2d3142"/>
-    <path d="M -6 12 C -6 4 6 4 6 12 Z" fill="#2d3142"/>
-  </g>
 </defs>
 
-<rect x="0" y="0" width="1200" height="460" fill="#f5f5f5"/>
+<rect x="0" y="0" width="1200" height="480" fill="#f5f5f5"/>
 
 <text x="40" y="44" font-family="'Instrument Serif', Georgia, 'Times New Roman', serif" font-size="28" fill="#2d3142">How a loop works</text>
 <text x="40" y="64" font-family="'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace" font-size="9" letter-spacing="0.06em" fill="#7a8399">YOU ASK ONCE. CLAUDE DOES THE REST.</text>
 
-<!-- 1 Ask: human, icon marks it -->
+<!-- 1 Ask: human -->
 <rect x="40" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
-<use href="#personIcon" x="60" y="160"/>
-<text x="112" y="176" text-anchor="middle" font-family="Geist, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Ask</text>
-<text x="104" y="196" text-anchor="middle" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#4f5d75">ask once</text>
+<rect x="46" y="158" width="30" height="16" rx="4" fill="#ececec"/>
+<text x="61" y="170" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">YOU</text>
+<text x="104" y="188" text-anchor="middle" font-family="Geist, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Ask</text>
+<text x="104" y="200" text-anchor="middle" font-family="'Geist Mono', ui-monospace, monospace" font-size="8" fill="#4f5d75">ask once</text>
 
 <line x1="168" y1="180" x2="228" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
 
-<!-- 2 Rules: Claude, muted outline marks it -->
-<rect x="232" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#4f5d75" stroke-width="1.4"/>
-<text x="296" y="176" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Rules</text>
-<text x="296" y="194" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">learns the rules</text>
+<!-- 2 Rules: Claude -->
+<rect x="232" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+<rect x="238" y="158" width="24" height="16" rx="4" fill="#ececec"/>
+<text x="250" y="170" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">AI</text>
+<text x="296" y="188" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Rules</text>
+<text x="296" y="200" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">learns the rules</text>
 
 <line x1="360" y1="180" x2="420" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
 
 <!-- 3 Do the job: Claude -->
-<rect x="424" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#4f5d75" stroke-width="1.4"/>
-<text x="488" y="176" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Do the job</text>
-<text x="488" y="194" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">gets to work</text>
+<rect x="424" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+<rect x="430" y="158" width="24" height="16" rx="4" fill="#ececec"/>
+<text x="442" y="170" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">AI</text>
+<text x="488" y="188" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Do the job</text>
+<text x="488" y="200" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">gets to work</text>
 
 <line x1="552" y1="180" x2="612" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
 
 <!-- 4 Check: Claude, focal diamond keeps the one accent color -->
 <polygon points="680,136 752,180 680,224 608,180" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.2"/>
-<text x="680" y="176" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Check</text>
-<text x="680" y="194" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">good?</text>
+<rect x="654" y="146" width="24" height="15" rx="4" fill="#ececec"/>
+<text x="666" y="157" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">AI</text>
+<text x="680" y="184" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Check</text>
+<text x="680" y="198" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">good?</text>
 
 <line x1="752" y1="180" x2="812" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
 <text x="782" y="172" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.06em" fill="#4f5d75">yes</text>
@@ -54,39 +57,54 @@
 <text x="584" y="76" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.06em" fill="#7a8399">not good: fix it, check again</text>
 
 <!-- 5 Remember: Claude -->
-<rect x="816" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#4f5d75" stroke-width="1.4"/>
-<text x="880" y="176" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Remember</text>
-<text x="880" y="194" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">saves progress</text>
+<rect x="816" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+<rect x="822" y="158" width="24" height="16" rx="4" fill="#ececec"/>
+<text x="834" y="170" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">AI</text>
+<text x="880" y="188" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Remember</text>
+<text x="880" y="200" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">saves progress</text>
 
 <!-- saves to your own storage -->
-<line x1="880" y1="208" x2="880" y2="316" stroke="#7a8399" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrowMuted)"/>
-<rect x="784" y="320" width="192" height="48" rx="6" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.30)" stroke-width="1"/>
-<text x="880" y="342" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">Your storage</text>
-<text x="880" y="358" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">Notion, Drive, OneDrive, files</text>
+<line x1="880" y1="208" x2="880" y2="308" stroke="#7a8399" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrowMuted)"/>
+<rect x="784" y="312" width="192" height="48" rx="6" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.30)" stroke-width="1"/>
+<text x="880" y="334" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">Your storage</text>
+<text x="880" y="350" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">Notion, Drive, OneDrive, files</text>
 
 <line x1="944" y1="180" x2="1004" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
 
 <!-- 6 Decide: Claude, wider diamond so text fits -->
-<polygon points="1080,132 1164,180 1080,228 996,180" fill="rgba(79,93,117,0.06)" stroke="#4f5d75" stroke-width="1.4"/>
-<text x="1080" y="176" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Decide</text>
-<text x="1080" y="194" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">again or stop?</text>
+<polygon points="1080,132 1164,180 1080,228 996,180" fill="rgba(45,49,66,0.05)" stroke="#2d3142" stroke-width="1"/>
+<rect x="1054" y="142" width="24" height="15" rx="4" fill="#ececec"/>
+<text x="1066" y="153" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">AI</text>
+<text x="1080" y="180" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Decide</text>
+<text x="1080" y="196" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">again or stop?</text>
 
 <!-- ask you branch down -->
-<line x1="1080" y1="228" x2="1080" y2="316" stroke="#7a8399" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrowMuted)"/>
-<rect x="984" y="320" width="192" height="48" rx="6" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.30)" stroke-width="1"/>
-<use href="#personIcon" x="1004" y="328"/>
-<text x="1088" y="342" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">Ask you</text>
-<text x="1080" y="358" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">decide</text>
-<text x="1010" y="312" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.06em" fill="#7a8399">stuck or unclear</text>
+<line x1="1080" y1="228" x2="1080" y2="308" stroke="#7a8399" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrowMuted)"/>
+<rect x="984" y="312" width="192" height="48" rx="6" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.30)" stroke-width="1"/>
+<rect x="994" y="318" width="30" height="16" rx="4" fill="#ececec"/>
+<text x="1009" y="330" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">YOU</text>
+<text x="1088" y="334" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">Ask you</text>
+<text x="1080" y="350" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">decide</text>
+<text x="1010" y="304" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.06em" fill="#7a8399">stuck or unclear</text>
 
 <!-- keep going: loop back to Ask, arcing along the bottom -->
-<path d="M996,196 C 700,400 300,400 104,208" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
-<text x="560" y="414" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="0.06em" fill="#4f5d75">next time, it starts again the same way</text>
+<path d="M996,196 C 700,390 300,390 104,208" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
 
-<!-- legend -->
-<use href="#personIcon" x="52" y="440"/>
-<text x="72" y="446" font-family="Geist, sans-serif" font-size="10" fill="#2d3142">= a step you do</text>
-<rect x="200" y="434" width="20" height="14" rx="3" fill="#ffffff" stroke="#4f5d75" stroke-width="1.4"/>
-<text x="228" y="446" font-family="Geist, sans-serif" font-size="10" fill="#2d3142">= a step Claude does on its own</text>
+<!-- legend, structured rows like the reference standard -->
+<line x1="40" y1="404" x2="1160" y2="404" stroke="rgba(45,49,66,0.12)" stroke-width="1"/>
+
+<text x="40" y="426" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" letter-spacing="0.1em" fill="#7a8399">WHO</text>
+<rect x="120" y="416" width="30" height="16" rx="4" fill="#ececec"/>
+<text x="135" y="428" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">YOU</text>
+<text x="160" y="428" font-family="Geist, sans-serif" font-size="11" fill="#2d3142">a step you do</text>
+<rect x="320" y="416" width="24" height="16" rx="4" fill="#ececec"/>
+<text x="332" y="428" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">AI</text>
+<text x="356" y="428" font-family="Geist, sans-serif" font-size="11" fill="#2d3142">a step Claude does on its own</text>
+
+<text x="40" y="456" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" letter-spacing="0.1em" fill="#7a8399">FLOW</text>
+<line x1="120" y1="450" x2="150" y2="450" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
+<text x="160" y="454" font-family="Geist, sans-serif" font-size="11" fill="#2d3142">next step</text>
+<line x1="320" y1="450" x2="350" y2="450" stroke="#7a8399" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrowMuted)"/>
+<text x="360" y="454" font-family="Geist, sans-serif" font-size="11" fill="#2d3142">goes back to fix, or hands off to you</text>
 
 </svg>

@@ -1,88 +1,112 @@
-<svg viewBox="0 0 1200 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title2 desc2">
+<svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title2 desc2">
 <title id="title2">Four-loop architecture example</title>
-<desc id="desc2">A scheduled sync task feeds a shared loop hub, which fans out to four illustrative loops: an article checker, a PRD checker, a code review loop, and an email follow-up loop, each reading its own skill or database source.</desc>
+<desc id="desc2">A scheduled sync task feeds a shared loop hub, which fans out to four illustrative loops: an article checker, a PRD checker, a code review loop, and an email follow-up loop, each reading its own skill or database source. A LOOP chip marks the repeating tasks, a SRC chip marks their sources, dashed boxes are skills kept in sync by the scheduled task, solid muted boxes are databases with nothing to sync.</desc>
 <defs>
   <marker id="arrow2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
     <path d="M0,0 L8,4 L0,8 z" fill="#2d3142"/>
   </marker>
 </defs>
 
-<rect x="0" y="0" width="1200" height="640" fill="#f5f5f5"/>
+<rect x="0" y="0" width="1200" height="720" fill="#f5f5f5"/>
 <text x="40" y="44" font-family="'Instrument Serif', Georgia, serif" font-size="28" fill="#2d3142">A working example</text>
 <text x="40" y="64" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="0.06em" fill="#7a8399">FOUR ILLUSTRATIVE LOOPS SHARING ONE HUB PAGE</text>
 
-<!-- Scheduled sync task: input treatment -->
+<!-- Scheduled sync task -->
 <rect x="480" y="88" width="240" height="56" rx="6" fill="rgba(79,93,117,0.10)" stroke="#7a8399" stroke-width="1"/>
-<text x="600" y="112" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Scheduled Sync Task</text>
-<text x="600" y="128" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">runs daily, outside any chat</text>
+<rect x="490" y="94" width="36" height="16" rx="4" fill="#ececec"/>
+<text x="508" y="106" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">SYNC</text>
+<text x="614" y="112" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Scheduled Sync Task</text>
+<text x="600" y="132" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">runs daily, outside any chat</text>
 
 <line x1="600" y1="144" x2="600" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow2)"/>
 <text x="612" y="166" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">daily</text>
 
 <!-- Hub: focal treatment, the one accent -->
 <rect x="440" y="184" width="320" height="72" rx="8" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.2"/>
-<text x="600" y="214" text-anchor="middle" font-family="Geist, sans-serif" font-size="13" font-weight="600" fill="#2d3142">Loop Hub</text>
-<text x="600" y="232" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">one page per loop, state lives here</text>
-<text x="600" y="246" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">not in any single conversation</text>
+<rect x="452" y="192" width="34" height="16" rx="4" fill="#ececec"/>
+<text x="469" y="204" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">HUB</text>
+<text x="616" y="216" text-anchor="middle" font-family="Geist, sans-serif" font-size="13" font-weight="600" fill="#2d3142">Loop Hub</text>
+<text x="600" y="234" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">one page per loop, state lives here</text>
+<text x="600" y="248" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">not in any single conversation</text>
 
-<!-- 4 loop boxes: backend treatment -->
-<!-- centers: 160, 440, 720, 1000 at y=340..404 -->
+<!-- 4 loop boxes -->
 <g font-family="Geist, sans-serif">
   <rect x="80" y="340" width="180" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
-  <text x="170" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Article</text>
-  <text x="170" y="380" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Checker Loop</text>
-  <text x="170" y="396" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">checker, not worker</text>
+  <rect x="90" y="346" width="40" height="16" rx="4" fill="#ececec"/>
+  <text x="110" y="358" text-anchor="middle" font-size="8" font-weight="600" fill="#2d3142">LOOP</text>
+  <text x="170" y="378" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Article</text>
+  <text x="170" y="392" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Checker Loop</text>
 
   <rect x="360" y="340" width="180" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
-  <text x="450" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">PRD Checker</text>
-  <text x="450" y="380" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Loop</text>
-  <text x="450" y="396" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">structure + style</text>
+  <rect x="370" y="346" width="40" height="16" rx="4" fill="#ececec"/>
+  <text x="390" y="358" text-anchor="middle" font-size="8" font-weight="600" fill="#2d3142">LOOP</text>
+  <text x="450" y="378" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">PRD Checker</text>
+  <text x="450" y="392" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Loop</text>
 
   <rect x="640" y="340" width="180" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
-  <text x="730" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Code Review</text>
-  <text x="730" y="380" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Loop</text>
-  <text x="730" y="396" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">flags open PRs</text>
+  <rect x="650" y="346" width="40" height="16" rx="4" fill="#ececec"/>
+  <text x="670" y="358" text-anchor="middle" font-size="8" font-weight="600" fill="#2d3142">LOOP</text>
+  <text x="730" y="378" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Code Review</text>
+  <text x="730" y="392" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Loop</text>
 
   <rect x="920" y="340" width="180" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
-  <text x="1010" y="366" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Email</text>
-  <text x="1010" y="380" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Follow-up Loop</text>
-  <text x="1010" y="396" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">drafts only, never sends</text>
+  <rect x="930" y="346" width="40" height="16" rx="4" fill="#ececec"/>
+  <text x="950" y="358" text-anchor="middle" font-size="8" font-weight="600" fill="#2d3142">LOOP</text>
+  <text x="1010" y="378" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Email</text>
+  <text x="1010" y="392" text-anchor="middle" font-size="11" font-weight="600" fill="#2d3142">Follow-up Loop</text>
 </g>
 
-<!-- hub to 4 loops -->
 <line x1="500" y1="256" x2="185" y2="336" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow2)"/>
 <line x1="560" y1="256" x2="460" y2="336" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow2)"/>
 <line x1="640" y1="256" x2="740" y2="336" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow2)"/>
 <line x1="700" y1="256" x2="1015" y2="336" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow2)"/>
 
-<!-- sources row: external skills (dashed ink border) and stores (muted border) -->
-<!-- shared skill under loop 1 and 2 -->
+<!-- sources row -->
 <rect x="180" y="500" width="220" height="56" rx="6" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.30)" stroke-width="1" stroke-dasharray="4,4"/>
-<text x="290" y="524" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">writing-style</text>
-<text x="290" y="540" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">skill, external to Notion</text>
+<rect x="190" y="506" width="34" height="16" rx="4" fill="#ececec"/>
+<text x="207" y="518" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">SRC</text>
+<text x="290" y="530" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">writing-style</text>
+<text x="290" y="546" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">skill, external to the hub</text>
 
 <rect x="440" y="500" width="200" height="56" rx="6" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.30)" stroke-width="1" stroke-dasharray="4,4"/>
-<text x="540" y="524" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">prd-template</text>
-<text x="540" y="540" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">skill, external to Notion</text>
+<rect x="450" y="506" width="34" height="16" rx="4" fill="#ececec"/>
+<text x="467" y="518" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">SRC</text>
+<text x="540" y="530" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">prd-template</text>
+<text x="540" y="546" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">skill, external to the hub</text>
 
 <rect x="660" y="500" width="140" height="56" rx="6" fill="rgba(45,49,66,0.05)" stroke="#7a8399" stroke-width="1"/>
-<text x="730" y="524" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">Pull Requests</text>
-<text x="730" y="540" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">database</text>
+<rect x="668" y="506" width="34" height="16" rx="4" fill="#ececec"/>
+<text x="685" y="518" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">SRC</text>
+<text x="730" y="536" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">Pull Requests</text>
+<text x="730" y="550" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">database</text>
 
 <rect x="920" y="500" width="180" height="56" rx="6" fill="rgba(45,49,66,0.05)" stroke="#7a8399" stroke-width="1"/>
-<text x="1010" y="524" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">Contacts</text>
-<text x="1010" y="540" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">database</text>
+<rect x="928" y="506" width="34" height="16" rx="4" fill="#ececec"/>
+<text x="945" y="518" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">SRC</text>
+<text x="1010" y="536" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">Contacts</text>
+<text x="1010" y="550" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">database</text>
 
-<!-- loop1 and loop2 both to writing-style -->
 <line x1="180" y1="404" x2="270" y2="500" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow2)"/>
 <line x1="410" y1="404" x2="330" y2="500" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow2)"/>
-<!-- loop2 also to prd-template -->
 <line x1="470" y1="404" x2="530" y2="500" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow2)"/>
-<!-- loop3 to Pull Requests -->
 <line x1="730" y1="404" x2="730" y2="500" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow2)"/>
-<!-- loop4 to Email DB -->
 <line x1="1010" y1="404" x2="1010" y2="500" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow2)"/>
 
-<text x="40" y="600" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.06em" fill="#7a8399">DASHED = SKILL (DRIFT RISK, NEEDS SYNCING)   SOLID MUTED = DATABASE (NO SKILL, NO DRIFT RISK)</text>
+<!-- legend, structured rows like the reference standard -->
+<line x1="40" y1="600" x2="1160" y2="600" stroke="rgba(45,49,66,0.12)" stroke-width="1"/>
+
+<text x="40" y="626" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" letter-spacing="0.1em" fill="#7a8399">PIECES</text>
+<rect x="140" y="616" width="40" height="16" rx="4" fill="#ececec"/>
+<text x="160" y="628" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">LOOP</text>
+<text x="192" y="628" font-family="Geist, sans-serif" font-size="11" fill="#2d3142">a repeating task</text>
+<rect x="360" y="616" width="34" height="16" rx="4" fill="#ececec"/>
+<text x="377" y="628" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#2d3142">SRC</text>
+<text x="404" y="628" font-family="Geist, sans-serif" font-size="11" fill="#2d3142">what that task reads from</text>
+
+<text x="40" y="656" font-family="'Geist Mono', monospace" font-size="8" font-weight="600" letter-spacing="0.1em" fill="#7a8399">SOURCE TYPE</text>
+<rect x="140" y="646" width="28" height="16" rx="4" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.30)" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="180" y="658" font-family="Geist, sans-serif" font-size="11" fill="#2d3142">skill, kept in sync by the task above</text>
+<rect x="500" y="646" width="28" height="16" rx="4" fill="rgba(45,49,66,0.05)" stroke="#7a8399" stroke-width="1"/>
+<text x="540" y="658" font-family="Geist, sans-serif" font-size="11" fill="#2d3142">database, nothing to sync</text>
 
 </svg>
