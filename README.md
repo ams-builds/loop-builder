@@ -43,7 +43,3 @@ Once installed, talk to Claude normally:
 - "Am I already running a loop?"
 
 The skill triggers on its own; you don't need to invoke it by name.
-
-## License
-
-Feel free to use, modify, and redistribute.
