@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Loop anatomy flowchart</title>
+<desc id="desc">Six-part loop cycle: trigger, context, action, verification, state, decision, with a fail branch back to action and a continue branch back to trigger.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L8,4 L0,8 z" fill="#2d3142"/>
+  </marker>
+  <marker id="arrowMuted" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L8,4 L0,8 z" fill="#7a8399"/>
+  </marker>
+</defs>
+
+<rect x="0" y="0" width="1200" height="420" fill="#f5f5f5"/>
+
+<text x="40" y="44" font-family="'Instrument Serif', Georgia, 'Times New Roman', serif" font-size="28" fill="#2d3142">Loop anatomy</text>
+<text x="40" y="64" font-family="'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace" font-size="9" letter-spacing="0.06em" fill="#7a8399">TRIGGER &#8594; CONTEXT &#8594; ACTION &#8594; VERIFICATION &#8594; STATE &#8594; DECISION</text>
+
+<!-- Row boxes, centers at y=180, box height 56 -->
+<!-- 1 Trigger -->
+<rect x="40" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+<text x="104" y="176" text-anchor="middle" font-family="Geist, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Trigger</text>
+<text x="104" y="192" text-anchor="middle" font-family="'Geist Mono', ui-monospace, monospace" font-size="9" fill="#4f5d75">what starts a run</text>
+
+<line x1="168" y1="180" x2="228" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- 2 Context -->
+<rect x="232" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+<text x="296" y="176" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Context</text>
+<text x="296" y="192" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">fixed rules to read</text>
+
+<line x1="360" y1="180" x2="420" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- 3 Action -->
+<rect x="424" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+<text x="488" y="176" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Action</text>
+<text x="488" y="192" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">one constrained job</text>
+
+<line x1="552" y1="180" x2="612" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- 4 Verification: focal diamond -->
+<polygon points="680,140 748,180 680,220 612,180" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.2"/>
+<text x="680" y="176" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Verify</text>
+<text x="680" y="192" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">pass / fail?</text>
+
+<line x1="748" y1="180" x2="812" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
+<text x="780" y="172" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.06em" fill="#4f5d75">pass</text>
+
+<!-- fail loop back to Action -->
+<path d="M680,140 C680,80 550,80 488,152" fill="none" stroke="#7a8399" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrowMuted)"/>
+<text x="584" y="76" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.06em" fill="#7a8399">fail: fix once, recheck</text>
+
+<!-- 5 State -->
+<rect x="816" y="152" width="128" height="56" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+<text x="880" y="176" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">State</text>
+<text x="880" y="192" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#4f5d75">written, not just kept</text>
+
+<line x1="944" y1="180" x2="1004" y2="180" stroke="#2d3142" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- 6 Decision diamond -->
+<polygon points="1080,140 1148,180 1080,220 1012,180" fill="rgba(45,49,66,0.05)" stroke="#2d3142" stroke-width="1"/>
+<text x="1080" y="176" text-anchor="middle" font-family="Geist, sans-serif" font-size="12" font-weight="600" fill="#2d3142">Decide</text>
+<text x="1080" y="192" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4f5d75">stop / continue</text>
+
+<!-- escalate branch down -->
+<line x1="1080" y1="220" x2="1080" y2="300" stroke="#7a8399" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrowMuted)"/>
+<rect x="984" y="304" width="192" height="48" rx="6" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.30)" stroke-width="1"/>
+<text x="1080" y="332" text-anchor="middle" font-family="Geist, sans-serif" font-size="11" font-weight="600" fill="#2d3142">Escalate to human</text>
+<text x="1000" y="296" font-family="'Geist Mono', monospace" font-size="8" letter-spacing="0.06em" fill="#7a8399">ambiguous or blocked</text>
+
+<!-- continue loop back to Trigger, arcing along the bottom -->
+<path d="M1012,196 C 700,380 300,380 104,208" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/>
+<text x="560" y="398" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" letter-spacing="0.06em" fill="#4f5d75">continue: next trigger fires the same loop</text>
+
+</svg>
