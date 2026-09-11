@@ -3,6 +3,9 @@
 **One line Summary: 
 _1 prompt, once. After that, Claude runs the whole thing on its own, checks its own work, and remembers where it left off, without you re-explaining anything next time._**
 
+<img width="1030" height="743" alt="image" src="https://github.com/user-attachments/assets/fc11a97f-cb44-45e7-bac4-7486cca05229" />
+
+
 *Want the technical terms explained in plain speak? See the [Jargon Buster](JARGON.md).*
 
 This is a Claude skill that helps you turn something you already ask Claude to do over and over into something that runs itself, checks its own work, and picks up where it left off next time, instead of you re-explaining it from scratch every time.
