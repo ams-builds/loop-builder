@@ -1,32 +1,36 @@
 # loop-builder
 
-A Claude skill that walks you through turning a workflow you already repeat with Claude into a real **Claude loop**, a repeatable process with a trigger, a checklist, a state file, and a review point, instead of a repeated one-off prompt.
+**The pitch: one prompt, once. After that, Claude runs the whole thing on its own, checks its own work, and remembers where it left off, without you re-explaining anything next time.**
+
+*Want the technical terms explained in plain speak? See the [Jargon Buster](JARGON.md).*
+
+This is a Claude skill that helps you turn something you already ask Claude to do over and over into something that runs itself, checks its own work, and picks up where it left off next time, instead of you re-explaining it from scratch every time.
 
 ## What it does
 
-Ask Claude to build a loop, or ask what you could automate based on skills or workflows you already have, and this skill guides Claude through:
+Ask Claude to build one of these for you, or ask what's worth turning into one based on what you already do, and this skill walks Claude through:
 
-1. Inventorying what you already do repeatedly
-2. Checking each candidate against a 5-question readiness test
-3. Scaffolding the minimum viable loop (task, instructions, state file)
-4. Recommending a safe starting permission level (read-only or draft-only)
-5. Deciding where the loop's state should actually live so it survives between sessions
-6. Testing manually before anything gets automated
-7. Confirming when it's actually ready to use
+1. Looking at what you already ask Claude to repeat
+2. Checking whether it's actually a good fit for this, some tasks aren't
+3. Building the basic pieces: what the goal is, the instructions, and a place to save progress
+4. Starting small and safe: Claude reads and drafts first, nothing gets sent or changed without you saying so
+5. Making sure the saved progress lives somewhere that survives, your notes app, a shared drive, wherever you already keep things
+6. Testing it by hand a few times before trusting it to run on its own
+7. Telling you plainly when it's actually ready
 
-It also encodes a handful of failure modes that show up constantly in first loops (skimmed checks, unused state files, duplicated rules that drift out of sync) so Claude checks for them rather than repeating them.
+It also watches for the common ways these go wrong the first time: checking too quickly and missing things, saving progress but never actually looking at it again, and two copies of the same rule quietly disagreeing after one gets updated and the other doesn't.
 
 ## How it works
 
 *Diagrams below follow the visual language of [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design): one accent color, editorial type roles, 1px hairlines, no shadows, a 4px grid. Built as standalone SVG rather than through that skill directly, since it's a Claude Code plugin and this repo targets multiple Claude surfaces.*
 
-![Loop anatomy flowchart: trigger, context, action, verification, state, decision, with a fail branch back to action and a continue branch back to trigger](assets/loop-anatomy-flowchart.svg)
+![Simple diagram showing one person asking a question, Claude doing the work in a repeating cycle, and the result being saved to the person's own storage](assets/loop-anatomy-flowchart.svg)
 
-The six-part cycle every loop in this skill is built around. A fail on verification loops back to a single fix-and-recheck pass, not indefinite retries. A stalled or ambiguous decision escalates to a human instead of guessing.
+One prompt sets this up. From there, Claude runs the whole cycle on its own, checking its own work and remembering where it left off, no re-explaining needed on the next run. The only other moment you're needed is when something's genuinely stuck, Claude stops and asks instead of guessing. Progress gets saved wherever you already keep things, Notion, Google Drive, Microsoft OneDrive, or plain files, not anything proprietary.
 
-![Architecture diagram of four illustrative loops fed by one scheduled sync task, each reading its own skill or database source](assets/four-loops-architecture.svg)
+![Example showing four small repeating tasks all saving their progress to the same shared place](assets/four-loops-architecture.svg)
 
-An illustrative example: 4 loops sharing one hub page. 2 of them (dashed boxes) pull rules from a skill and carry drift risk if that skill changes; 2 of them (solid muted boxes) just query a database and have no such risk. The scheduled task at the top is what makes the first 2 self-correcting instead of relying on someone remembering to sync them by hand.
+An example: 4 separate repeating tasks, all saving their notes in the same shared place. 2 of them (dashed boxes) depend on a set of rules that could change later, so they need an occasional check that they're still up to date. 2 of them (solid boxes) just look something up and don't have that problem.
 
 ## How to install
 
@@ -43,3 +47,7 @@ Once installed, talk to Claude normally:
 - "Am I already running a loop?"
 
 The skill triggers on its own; you don't need to invoke it by name.
+
+---
+
+*New terms? See the [Jargon Buster](JARGON.md) for plain-English explanations of trigger, verification, state, permission level, drift, and more.*
