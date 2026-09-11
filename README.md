@@ -1,6 +1,7 @@
 # loop-builder
 
-**1 line summary: 1 prompt, once. After that, Claude runs the whole thing on its own, checks its own work, and remembers where it left off, without you re-explaining anything next time.**
+**One line Summary: 
+1 prompt, once. After that, Claude runs the whole thing on its own, checks its own work, and remembers where it left off, without you re-explaining anything next time.**
 
 *Want the technical terms explained in plain speak? See the [Jargon Buster](JARGON.md).*
 
