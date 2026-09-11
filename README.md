@@ -23,7 +23,7 @@ It also watches for the common ways these go wrong the first time: checking too 
 
 ## How it works
 
-*Diagrams below follow the visual language of [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design): one accent color, editorial type roles, 1px hairlines, no shadows, a 4px grid. Built as standalone SVG rather than through that skill directly, since it's a Claude Code plugin and this repo targets multiple Claude surfaces.*
+*Diagrams below follow the visual language of [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design):*
 
 ![Simple diagram showing one person asking a question, Claude doing the work in a repeating cycle, and the result being saved to the person's own storage](assets/loop-anatomy-flowchart.svg)
 
