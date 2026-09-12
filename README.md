@@ -3,6 +3,7 @@
 **The pitch: one prompt, once. After that, Claude runs the whole thing on its own, checks its own work, and remembers where it left off, without you re-explaining anything next time.**
 
 <img width="2060" height="1486" alt="explanation" src="https://github.com/user-attachments/assets/5f4b10a2-cb26-47c2-b132-98a53d5aeec0" />
+
 *Want the technical terms explained in plain speak? See the [Jargon Buster](JARGON.md).*
 
 This is a Claude skill that helps you turn something you already ask Claude to do over and over into something that runs itself, checks its own work, and picks up where it left off next time, instead of you re-explaining it from scratch every time.
