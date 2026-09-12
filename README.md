@@ -1,10 +1,6 @@
 # loop-builder
 
-**One line Summary: 
-_1 prompt, once. After that, Claude runs the whole thing on its own, checks its own work, and remembers where it left off, without you re-explaining anything next time._**
-
-<img width="1030" height="743" alt="image" src="https://github.com/user-attachments/assets/fc11a97f-cb44-45e7-bac4-7486cca05229" />
-
+**The pitch: one prompt, once. After that, Claude runs the whole thing on its own, checks its own work, and remembers where it left off, without you re-explaining anything next time.**
 
 *Want the technical terms explained in plain speak? See the [Jargon Buster](JARGON.md).*
 
@@ -18,7 +14,7 @@ Ask Claude to build one of these for you, or ask what's worth turning into one b
 2. Checking whether it's actually a good fit for this, some tasks aren't
 3. Building the basic pieces: what the goal is, the instructions, and a place to save progress
 4. Starting small and safe: Claude reads and drafts first, nothing gets sent or changed without you saying so
-5. Making sure the saved progress lives somewhere that survives and stays usable elsewhere, your notes app, a shared drive, wherever you already keep things, not locked into one tool 
+5. Making sure the saved progress lives somewhere that survives, your notes app, a shared drive, wherever you already keep things
 6. Testing it by hand a few times before trusting it to run on its own
 7. Telling you plainly when it's actually ready
 
@@ -26,7 +22,7 @@ It also watches for the common ways these go wrong the first time: checking too 
 
 ## How it works
 
-*Diagrams below follow the visual language of [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design):*
+*Diagrams below follow the visual language of [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design): one accent color, editorial type roles, 1px hairlines, no shadows, a 4px grid. Built as standalone SVG rather than through that skill directly, since it's a Claude Code plugin and this repo targets multiple Claude surfaces.*
 
 ![Simple diagram showing one person asking a question, Claude doing the work in a repeating cycle, and the result being saved to the person's own storage](assets/loop-anatomy-flowchart.svg)
 
@@ -51,6 +47,10 @@ Once installed, talk to Claude normally:
 - "Am I already running a loop?"
 
 The skill triggers on its own; you don't need to invoke it by name.
+
+## License
+
+Feel free to use, modify, and redistribute.
 
 ---
 
