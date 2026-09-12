@@ -34,6 +34,8 @@ One prompt sets this up. From there, Claude runs the whole cycle on its own, che
 
 An example: 4 separate repeating tasks, all saving their notes in the same shared place. 2 of them (dashed boxes) depend on a set of rules that could change later, so they need an occasional check that they're still up to date. 2 of them (solid boxes) just look something up and don't have that problem.
 
+Note: the automatic scheduling described above (the daily sync check) currently requires Claude Cowork or the Claude desktop app's Scheduled Tasks feature. On Claude Code, the same result is possible but requires setting up an external trigger yourself, cron, a systemd timer, or a CI pipeline, since Claude Code has no built-in scheduler.
+
 ## How to install
 
 **Claude.ai / Claude apps**: upload `SKILL.md` as a custom skill, or place this folder where your Claude setup looks for skills.
