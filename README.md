@@ -8,6 +8,17 @@
 
 This is a Claude skill that helps you turn something you already ask Claude to do over and over into something that runs itself, checks its own work, and picks up where it left off next time, instead of you re-explaining it from scratch every time.
 
+## Who it's for
+
+Built for **Claude Cowork and Claude chat** (claude.ai and the Claude desktop app), and for anyone who uses them. No coding, no terminal, no developer setup. It is not a Claude Code tool.
+
+## Safe by default
+
+1. **Read and draft first.** Claude starts read-only. Nothing is sent, changed or deleted until you say so.
+2. **A review point in every loop.** You see the result before anything final happens.
+3. **Your data stays yours.** Progress is saved in the notes app or drive you already use, where you can read, edit or delete it any time.
+4. **Extra care for risky actions.** If a loop would send messages, delete data or act on someone else's behalf, Claude asks for stricter approval first.
+
 ## What it does
 
 Ask Claude to build one of these for you, or ask what's worth turning into one based on what you already do, and this skill walks Claude through:
@@ -38,9 +49,9 @@ Note: the automatic scheduling described above (the daily sync check) currently 
 
 ## How to install
 
-**Claude.ai / Claude apps**: upload `SKILL.md` as a custom skill, or place this folder where your Claude setup looks for skills.
+**Claude Cowork / Claude chat / Claude apps**: upload `SKILL.md` as a custom skill. That is all you need.
 
-**Claude Code**: drop this folder into your skills directory (commonly `~/.claude/skills/` or your project's `.claude/skills/`).
+*Developers using Claude Code can also drop this folder into a skills directory, but the skill is designed for Cowork and chat. See `SKILL.md` for the developer notes.*
 
 ## How to use it
 
