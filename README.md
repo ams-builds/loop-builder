@@ -1,12 +1,16 @@
 # loop-builder
 
-**The pitch: one prompt, once. After that, Claude runs the whole thing on its own, checks its own work, and remembers where it left off, without you re-explaining anything next time.**
+## What is it?
+
+loop-builder is a Claude skill. It helps you turn a task you already ask Claude to repeat into a loop. A loop runs on its own, checks its own work, and remembers where it left off. You write one prompt, once.
 
 <img width="2060" height="1486" alt="explanation" src="https://github.com/user-attachments/assets/5f4b10a2-cb26-47c2-b132-98a53d5aeec0" />
 
 *Want the technical terms explained in plain speak? See the [Jargon Buster](JARGON.md).*
 
-This is a Claude skill that helps you turn something you already ask Claude to do over and over into something that runs itself, checks its own work, and picks up where it left off next time, instead of you re-explaining it from scratch every time.
+## What problem does it solve?
+
+When you ask Claude for the same task again and again, you explain it from scratch each time. Claude also forgets what it did last time, and it can miss mistakes in its own work. This skill sets the task up once, with a place to save progress and a check on the result. Next time, Claude continues from where it stopped.
 
 ## Who is it for?
 
