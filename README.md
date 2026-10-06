@@ -2,7 +2,7 @@
 
 ## What is it?
 
-loop-builder is a Claude skill. It helps you turn a task you already ask Claude to repeat into a loop. A loop runs on its own, checks its own work, and remembers where it left off. You write one prompt, once.
+loop-builder is a Claude skill. It works only with Claude (Claude Cowork and Claude chat). It does not work with Codex, ChatGPT or other AI agents. It helps you turn a task you already ask Claude to repeat into a loop. A loop runs on its own, checks its own work, and remembers where it left off. You write one prompt, once.
 
 <img width="2060" height="1486" alt="explanation" src="https://github.com/user-attachments/assets/5f4b10a2-cb26-47c2-b132-98a53d5aeec0" />
 
